@@ -10,17 +10,16 @@ import router from './routes/index';
 var index = router;
 
 
-
-var port: number = process.env.PORT || 4000;
+var port:number = process.env.PORT || 4000;
 var app = express();
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 
 //app.use(logger('dev'));
 /*app.use(bodyParser.urlencoded({
-    extended: false
-}));*/
+ extended: false
+ }));*/
 //app.use(coockieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -32,13 +31,13 @@ app.use((req, res, next) => {
     var err = new Error('Not Found');
     err.message = '404 ' + req.url;
     next(err);
-}); 
+});
 /*var renderIndex = (req: express.Request, res: express.Response) => {
-    res.render('index', {title: 'meantype'});
-}*/
- 
+ res.render('index', {title: 'meantype'});
+ }*/
+
 // app.get('/', renderIndex);
- 
+
 var server = app.listen(port, () => {
     var host = server.address().address;
     var port = server.address().port;

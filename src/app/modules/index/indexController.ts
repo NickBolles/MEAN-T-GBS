@@ -1,24 +1,27 @@
-import 'angular'
-'use strict';
+import 'angular';
 import {IndexService} from './indexService';
+'use strict';
 export interface IScopeIndexController extends ng.IScope {
-    controller: IndexController;
-    helloWorld: string;
-};
+    controller:IndexController;
+    helloWorld:string;
+}
+;
 export class IndexController {
 
-    scope: IScopeIndexController;
-    state: angular.ui.IStateService;
+    scope:IScopeIndexController;
+    state:angular.ui.IStateService;
 
-    static $inject = ["$state","$scope",'IndexService'];
-    constructor(protected $state: angular.ui.IStateService, protected $scope: IScopeIndexController, indexService : IndexService) {
+    static $inject = ["$state", "$scope", 'IndexService'];
+
+    constructor(protected $state:angular.ui.IStateService, protected $scope:IScopeIndexController, indexService:IndexService) {
         this.scope = $scope;
         this.scope.controller = this;
         this.state = $state;
-        
+
         this.scope.helloWorld = indexService.returnHelloWorld();
-        
+
     };
+
     helloWorld() {
         console.log("here");
         this.scope.helloWorld = "Hello World from controller";

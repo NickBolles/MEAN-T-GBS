@@ -19,7 +19,7 @@ module helloWorld {
 
     // todo: add your routes
     routes.$inject = ["$stateProvider", "$urlRouterProvider"];
-    function routes($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) {
+    function routes($stateProvider:ng.ui.IStateProvider, $urlRouterProvider:ng.ui.IUrlRouterProvider) {
 
         $urlRouterProvider.otherwise('/');
 

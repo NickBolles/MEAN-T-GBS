@@ -8,7 +8,8 @@ export class IndexService {
     //static $inject = [];
     constructor() {
     }
-    returnHelloWorld(): string {
+
+    returnHelloWorld():string {
         return "Hello World From Service";
     }
 }

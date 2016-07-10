@@ -3,9 +3,6 @@
 // -----------------------------------------------------------------------------
 $blue-bg: rgb(48, 118, 255);
 
-
-
-
 // -----------------------------------------------------------------------------
 // Below is an awesome example of what using a variables file can do. It simplifys everything (especially z-indexes!)
 // This is from the angular-material library
@@ -14,9 +11,6 @@ $blue-bg: rgb(48, 118, 255);
 // It actually breaks the build process, so it is commented out, but the idea remains, just dont include a function
 // in your variable declarations!
 // -----------------------------------------------------------------------------
-
-
-
 
 //// Function
 ////-- Must be defined before variables
@@ -28,7 +22,7 @@ $blue-bg: rgb(48, 118, 255);
 //// Typography
 //// ------------------------------
 $font-family: Roboto, 'Helvetica Neue', sans-serif !default;
-$font-size:   10px !default;
+$font-size: 10px !default;
 //
 //$display-4-font-size-base: rem(11.20) !default;
 //$display-3-font-size-base: rem(5.600) !default;
