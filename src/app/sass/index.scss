@@ -1,0 +1,24 @@
+// Configuration, utils and helpers
+@import
+'utils/variables';
+//'abstracts/functions',
+//'abstracts/mixins';
+
+
+// Base stuff
+@import
+'base/typography';
+
+// Components
+@import
+'components/header';
+
+// Page-specific styles
+@import
+'pages/home';
+
+// Module specific styles
+@import '../modules/index/styles';
+
+// Librarys, imported using the "node-sass-import" npm module
+@import 'angular-material/angular-material.scss';

@@ -1,0 +1,53 @@
+<module>nb.index</module>
+<template id="nb.home">
+    <md-content id="nb-home" layout-fill layout="column">
+        <md-toolbar class="header">
+            <h2 class="md-toolbar-tools">
+                <span>This is the header</span>
+            </h2>
+        </md-toolbar>
+        <md-content layout-padding flex layout="column">
+            <!--<div layout-xs="column" layout="row" layout-fill layout-wrap>-->
+                <md-grid-list md-cols="2" md-cols-gt-sm="4" md-row-height="2:3" md-gutter="12px" md-gutter-gt-sm="8px" layout-fill flex>
+                    <md-grid-tile ng-repeat="i in [0,1,2,3,4,5]" layout="column">
+                        <md-card>
+                            <md-card-header>
+                                <md-card-avatar>
+                                    <img class="md-user-avatar" src="img/100-2.jpeg" alt="User" />
+                                </md-card-avatar>
+                                <md-card-header-text>
+                                    <span class="md-title">Hello World!</span>
+                                    <span class="md-subhead">subhead</span>
+                                </md-card-header-text>
+                            </md-card-header>
+                            <img ng-src="img/sunset-thumb.jpg" class="md-card-image" alt="Content Picture Here">
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <span class="md-headline">{{helloWorld}}</span>
+                                    <span class="md-subhead">This is card #{{i+1}}</span>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-card-content>
+                                <p>
+                                    The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                                    two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+                                </p>
+                            </md-card-content>
+                            <md-card-actions layout="row" layout-align="start center">
+                                <md-button ng-click="controller.helloWorld()">
+                                    Controller Event
+                                </md-button>
+                                <md-button>Action 2</md-button>
+                                <md-card-icon-actions>
+                                    <md-button class="md-icon-button" aria-label="toggle">
+                                        <md-icon md-svg-icon="md-toggle-arrow"></md-icon>
+                                    </md-button>
+                                </md-card-icon-actions>
+                            </md-card-actions>
+                        </md-card>
+                    </md-grid-tile>
+                </md-grid-list>
+            <!--</div>-->
+        </md-content>
+    </md-content>
+</template>
